@@ -1,17 +1,12 @@
 import './App.css'
-import { BusProvider } from './context/BusContext'
 import { Dashboard } from './components/Dashboard'
 
 function App() {
   const handleLogout = () => {
-    // Logout handler for admin
+    // Handled by Dashboard
   };
 
-  return (
-    <BusProvider>
-      <Dashboard onLogout={handleLogout} />
-    </BusProvider>
-  )
+  return <Dashboard onLogout={handleLogout} />
 }
 
 export default App
